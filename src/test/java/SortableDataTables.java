@@ -20,13 +20,13 @@ public class SortableDataTables {
         softAssert.assertEquals(element.getText(),"Smith", "Проверка 1");
 
         WebElement element1 = driver.findElement(By.xpath("//table//tr[2]//td[2]"));
-        softAssert.assertEquals(element1.getText(),"Frank", "Проверка 1");
+        softAssert.assertEquals(element1.getText(),"Frank", "Проверка 2");
 
         WebElement element2 = driver.findElement(By.xpath("//table//tr[3]//td[3]"));
-        softAssert.assertEquals(element2.getText(),"jdoe@hotmail.com", "Проверка 1");
+        softAssert.assertEquals(element2.getText(),"jdoe@hotmail.com", "Проверка 3");
 
         WebElement element3 = driver.findElement(By.xpath("//table//tr[4]//td[4]"));
-        softAssert.assertEquals(element3.getText(),"$50.00", "Проверка 1");
+        softAssert.assertEquals(element3.getText(),"$50.00", "Проверка 4");
         softAssert.assertAll();
         driver.quit();
     }
