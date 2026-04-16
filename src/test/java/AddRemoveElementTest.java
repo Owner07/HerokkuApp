@@ -29,7 +29,7 @@ public class AddRemoveElementTest {
 
 
         //открывает страницу по указанному url
-        driver.get("https://the-internet.herokuapp.com/add_remove_elements/");
+        driver.get("https://the-internet.herokuapp.com/add_remove_elements");
 
         driver.findElement(By.xpath("//button[text()='Add Element']")).click();
         driver.findElement(By.xpath("//button[text()='Add Element']")).click();
