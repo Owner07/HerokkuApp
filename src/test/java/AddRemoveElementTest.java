@@ -24,24 +24,16 @@ public class AddRemoveElementTest {
 
         //определяем браузер с которым хотим работать
         WebDriver driver = new ChromeDriver(options);
-
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
-
         //открывает страницу по указанному url
         driver.get("https://the-internet.herokuapp.com/add_remove_elements");
-
         driver.findElement(By.xpath("//button[text()='Add Element']")).click();
         driver.findElement(By.xpath("//button[text()='Add Element']")).click();
-
         int size = driver.findElements(By.xpath("//button[text()='Delete']")).size();
         Assert.assertEquals(size, 2);
-
         driver.findElement(By.xpath("//button[text()='Delete']")).click();
-
         int size1 = driver.findElements(By.xpath("//button[text()='Delete']")).size();
         Assert.assertEquals(size1, 1);
-
         //закрывает браузер
         driver.quit();
     }

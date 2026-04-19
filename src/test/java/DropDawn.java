@@ -28,6 +28,7 @@ public class DropDawn {
     softAssert.assertEquals(select.getFirstSelectedOption().getText(),"Option 1","Good");
     softAssert.assertAll();
     }
+
     @AfterMethod
     public void quit(){
         if(webDriver != null)
