@@ -23,9 +23,9 @@ public class DropDawn {
     webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     Select select = new Select(webDriver.findElement(By.id("dropdown")));
     select.selectByIndex(2);
-    softAssert.assertEquals(select.getFirstSelectedOption().getText(),"Option 2");
+    softAssert.assertEquals(select.getFirstSelectedOption().getText(),"Option 2","Good");
     select.selectByIndex(1);
-    softAssert.assertEquals(select.getFirstSelectedOption().getText(),"Option 1");
+    softAssert.assertEquals(select.getFirstSelectedOption().getText(),"Option 1","Good");
     softAssert.assertAll();
     }
     @AfterMethod
