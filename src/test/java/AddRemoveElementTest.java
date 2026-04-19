@@ -20,7 +20,7 @@ public class AddRemoveElementTest {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
         options.addArguments("--incognito");
-        options.addArguments("--disable-notfications");
+        options.addArguments("--disable-notifications");
 
         //определяем браузер с которым хотим работать
         WebDriver driver = new ChromeDriver(options);

@@ -16,7 +16,7 @@ public class SortableDataTables {
         driver.get("https://the-internet.herokuapp.com/tables");
         SoftAssert softAssert =new SoftAssert();
 
-        WebElement element = driver.findElement(By.xpath("//table//tr[1]//td[1]"));
+        WebElement element = driver.findElement(By.xpath("//table[2]//tr[1]//td[1]"));
         softAssert.assertEquals(element.getText(),"Smith", "Проверка 1");
 
         WebElement element1 = driver.findElement(By.xpath("//table//tr[2]//td[2]"));
