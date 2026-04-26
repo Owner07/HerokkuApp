@@ -32,8 +32,8 @@ public class BaseTest {
         Assert.assertEquals(driver.findElement(By.tagName("h4")).getText(),"Dynamic Controls");
     }
 
-    @AfterMethod (alwaysRun = true)
-    public void tearDown() {
-    driver.quit();
-}
+//    @AfterMethod (alwaysRun = true)
+//    public void tearDown() {
+//    driver.quit();
+//}
 }
