@@ -8,7 +8,7 @@ public class DynamicControlTest extends BaseTest{
     SoftAssert softAssert = new SoftAssert();
 
     @Test
-    public void checkBox() throws InterruptedException {
+    public void checkBox() {
         driver.get("https://the-internet.herokuapp.com/dynamic_controls");
         driver.findElement(By.xpath("//*[text() = 'Remove']")).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("message")));
